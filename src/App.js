@@ -2,13 +2,19 @@ import React, { Component } from "react";
 import "./App.css";
 
 class App extends Component {
-   mt = () => 'method';
   render() {
-    const name = 'vasi'
-    const fn = () => 'function';
+    const name = "vasi";
+    const loading = false;
+    const showName = true;
     return (
       <div className="App">
-        <h1>hello {name} , function {fn()} , method {this.mt()}</h1>
+        <h1>
+          {loading ? (
+            <h2>Loading...</h2>
+          ) : (
+            <h2>Hello {showName ? name : null}</h2>
+          )}
+        </h1>
       </div>
     );
   }
