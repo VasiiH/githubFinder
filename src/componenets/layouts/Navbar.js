@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa'; // npm install react-icons --save
 import PropTypes from 'prop-types'
 
 
