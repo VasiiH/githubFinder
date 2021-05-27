@@ -1,23 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
+import Navbar from './componenets/layouts/Navbar'
 
 class App extends Component {
   render() {
-    const name = "vasi";
-    const loading = false;
-    const showName = true;
     return (
       <div className="App">
-        <h1>
-          {loading ? (
-            <h2>Loading...</h2>
-          ) : (
-            <h2>Hello {showName ? name : null}</h2>
-          )}
-        </h1>
+        <Navbar></Navbar>
       </div>
     );
   }
 }
 
-export default App;
+export default App; 
